@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/Validar.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            <form onsubmit="return Validar()" method="get" enctype="multipart/form-data" action="Procesar_Alta.html">
+                <br><br><br>
+                <div id="div1">                  
+                    <p>NIF: <input type="text" name="NIF" maxlength="9"></p>
+                </div>                
+                <div>      
+                    <p>
+                        Apellidos: <input type="text" onkeyup="ValidarNomyApe(1)" name="aps" maxlength="80">
+                    </p>
+                </div>
+                <div> 
+                    <p>
+                        Nombre: <input type="text" onkeyup="ValidarNomyApe(2)" name="nom" maxlength="30">
+                    </p>
+                </div>
+                <div> 
+                    <p>
+                        Usuario: <input type="text" name="usu">
+                    </p>
+                </div>
+                <div> 
+                    <p>
+                        Email: <input type="text" name="mail" onblur="ValidarEmail()"> <span></span>
+                    </p>
+                </div>
+                <div> 
+                    <p>
+                        Contraseña: <input type="password" name="pass" maxlength="10">
+                    </p>
+                </div>
+                <br><br>
+                <div id="div2">
+                    <ul style="list-style-type:none; display:inline-block">
+                        <li>
+                            <input checked type="radio" name="SEXO" value="hombre">Hombre
+                        </li>
+                        <li>
+                            <input type="radio" name="SEXO" value="mujer">Mujer
+                        </li>
+                    </ul>
+                    <select name="paises">
+                        <option value="china">China</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="buthan">Buthan</option>
+                    </select>
+                    Foto Carnet    <input type="file" name="fichero">
+                </div>
+                <div id="div3">
+                    <input type="checkbox" name="email">Deseo recibir información por email
+                </div>
+                <div id="div4">
+                    <input type="submit" name="Aceptar" value="aceptar">            
+                    <input type="reset" name="Resetear" value="Resetear">    
+                </div>               
+                <div id="div5">
+                    <input type="image" alt="asdas" src="http://i.imgur.com/hAN8D0U.gif">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

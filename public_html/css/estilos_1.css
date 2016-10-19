@@ -1,0 +1,36 @@
+a{
+    margin-left: 225px;
+}
+div{
+    float:left;
+}
+#divPrincipal{
+    margin-top: 250px;
+    margin-left: 630px;
+}
+#div1{
+    margin-left: 150px;
+}
+#div2{    
+    margin-top: 40px;
+    margin-left: 550px;
+}
+#div3{    
+    margin-top: 40px;
+    margin-left: 750px;
+}
+#div4{
+    float:none !important;
+    margin-top: 40px;
+    margin-left: 800px;
+}
+#div5{
+    float:none !important; 
+    margin-top: 40px;
+    margin-left: 700px;
+}
+p{
+    margin-left: 20px;
+}
+
+
